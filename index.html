@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
   <title>Rock Paper Scissors</title>
-  <script type="text/javascript" src="app.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="RPS.css">
+
 </head>
+
 <body>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+
+      <h1 class="jumbotron-heading">Choose Your Weapon:</h1>
+
+      <p>
+        <div class="btn-group " role="group">
+          <button type="button" class="btn btn-secondary btn-lg" id="rock" onclick="this.blur();">Rock</button>
+          <button type="button" class="btn btn-secondary btn-lg" id="paper" onclick="this.blur();">Paper</button>
+          <button type="button" class="btn btn-secondary btn-lg" id="scissors" onclick="this.blur();">Scissors</button>
+        </div>
+      </p>
+
+      <p>
+        <div id="info">
+          <div id="choices">The first to reach 5 points wins.</div>
+          <div id="results"></div>
+          <div id="score"></div>
+        </div>
+      </p>
+
+      <p>
+        <div id="restart">
+          <button type="button" class="btn btn-outline-secondary" id="newGame" onclick="this.blur();">New Game</button>
+        </div>
+      </p>
+
+    </div>
+  </section>
+
+<script type="text/javascript" src="app.js"></script>
 
 </body>
 </html>
